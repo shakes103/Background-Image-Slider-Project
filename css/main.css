@@ -1,0 +1,51 @@
+.max-height{
+  min-height: 100vh;
+  
+ }
+ body{
+  background-color: yellow; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right,  rgb(0, 0, 0), rgb(85, 87, 69));
+ }
+ .photo-container{
+  min-height: 80vh;
+  background: url("../img/car-0.jpg") center/cover fixed no-repeat; 
+  color: white;
+  border: 0.5rem solid rgb(128, 128, 129);
+  border-radius: 0.5rem;
+  position: relative;
+  background-size: contain;
+ }
+
+ @media screen and (max-width: 768px) {
+  .photo-container {
+    min-height: 50vh;
+    min-width: 70vw;
+  }
+}
+
+ .prevBtn,.nextBtn{
+  font-size: 1.5rem;
+  color:white;
+  border:0.1rem solid rgb(128, 128, 129);
+  background: rgb(128, 128, 129);
+  position: absolute;
+  padding: 0.4rem;
+ }
+ .prevBtn:hover{
+  background: white;
+  color: rgb(128, 128, 129);
+ }
+ .nextBtn:hover{
+ background: white;
+ color: rgb(128, 128, 129);
+ }
+ .prevBtn{
+  top: 38%;
+  left: 0;
+  transform: translate(-50%,50%);
+ }
+ .nextBtn{
+  top: 38%;
+  right: 0;
+  transform: translate(50%,50%);
+ }
